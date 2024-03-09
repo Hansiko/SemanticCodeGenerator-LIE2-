@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Семантический генератор кода</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+  <body>
+    <div class="header">
+      <!-- Иконка пульса -->
+      <div class="logo-container">
+        <div class="pulse-icon">
+          <i class="fas fa-heartbeat"></i>
+        </div>
+        <span class="logo-text">Семантический Генератор Кода</span>
+      </div>
+    </div>
+  <div class="sidebar">
+    <h1>Меню</h1>
+    <ul>
+      <li><a href="#">Создать новый Чат</a></li>
+    </ul>
+  </div>
+  <div class="pulse-icon">
+    <i class="fas fa-heartbeat"></i>
+  </div>  
+  <div class="chat-container">
+    <div class="chat-box" id="chat-box">
+      <div class="chat-message from-assistant">
+        Всем привет! Как я могу помочь вам сегодня?
+      </div>
+    </div>
+    <div class="user-input">
+      <input type="text" id="user-input" placeholder="Напишите своё сообщение...">
+      <button onclick="sendMessage()">Send</button>
+      <button onclick="clearChat()" class="clear-button">Очистить чат</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
