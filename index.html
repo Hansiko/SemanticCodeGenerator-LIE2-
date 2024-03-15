@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Семантический генератор кода</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 </head>
@@ -36,10 +36,11 @@
     </div>
     <div class="user-input">
       <input type="text" id="user-input" placeholder="Напишите своё сообщение...">
-      <button onclick="sendMessage()">Send</button>
+      <button onclick="sendMessage()">Отправить</button>
       <button onclick="clearChat()" class="clear-button">Очистить чат</button>
     </div>
   </div>
-  <script src="js/script.js"></script>
+  <script src="script.js"></script>
+  <button class="theme-toggle-button" onclick="toggleTheme()">Сменить тему</button>
 </body>
 </html>
