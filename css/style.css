@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #4a148c, #000000);
+    background: #444;
     margin: 0;
     padding: 0;
     min-height: 100vh;
@@ -12,7 +12,7 @@ body {
   .chat-container {
     width: 80%;
     max-width: 700px;
-    background-image: linear-gradient(to bottom right, #0f0f0f, #252525);
+    background: #252525;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -38,14 +38,14 @@ body {
   }
   
   .from-user {
-    background-image: linear-gradient(to bottom right, #1564ec, #00b0ff);
+    background: #00b0ff;
     color: #ffffff;
     align-self: flex-end;
     text-align: right;
   }
 
   .from-assistant {
-    background-image: linear-gradient(to bottom right, #6a1b9a, #4a148c);
+    background: #444;
     color: #ffffff;
   }
   
@@ -53,7 +53,7 @@ body {
     padding: 20px;
     border-top: 1px solid #999; 
     display: flex;
-    background-color: #22004d;
+    background-color: #181818;
     align-items: center;
   }
   
@@ -63,13 +63,13 @@ body {
     border: none;
     border-radius: 4px;
     margin-right: 10px;
-    background-image: linear-gradient(to bottom right, #0f0f0f, #252525);
+    background: #252525;
     color: #fff;
   }
   
   .user-input button {
     padding: 10px 20px;
-    background-image: linear-gradient(to bottom right, #6a1b9a, #4a148c);
+    background: #444;
     color: white;
     border: none;
     border-radius: 4px;
@@ -77,7 +77,7 @@ body {
   }
   
   .user-input button:hover {
-    background-image: linear-gradient(to bottom right, #8223bd, #611cb6);
+    background: #222;
   }
   .code-box {
     background-color: #2b2b2b;
@@ -111,11 +111,11 @@ body {
 }
 
 .test-button:hover {
-  background-color: #9900ff;
+  background-color: #444;
 }
 
 .clear-button {
-  background-image: linear-gradient(to bottom right, #4a148c, #000000);
+  background: #444;
   color: white;
   border: none;
   border-radius: 4px;
@@ -125,7 +125,7 @@ body {
 }
 
 .clear-button:hover {
-  background-image: linear-gradient(to bottom right, #6a1b9a, #4a148c);
+  background: #444;
 }
 /* Стили для бокового меню */
 .sidebar {
@@ -134,9 +134,12 @@ body {
   top: 0;
   height: 100%;
   width: 200px;
-  background-image: linear-gradient(to bottom right, #0f0f0f, #252525);
+  background: #252525;
   color: #a3a3a3;
   padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-top-right-radius: 20px ;
+  border-bottom-right-radius: 20px ;
 }
 
 .sidebar h1 {
@@ -157,7 +160,7 @@ body {
 }
 
 .sidebar ul li a:hover {
-  background-color: #4a148c;
+  background-color: #444;
 }
 /* Стили для черного кружка */
 .pulse-icon {
@@ -167,7 +170,7 @@ body {
   transform: translateX(-50%); /* Центрируем иконку по горизонтали */
   width: 50px;
   height: 50px;
-  background-color: black;
+  background-color: #181818;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -176,7 +179,7 @@ body {
 
 /* Стили для иконки пульса */
 .pulse-icon i {
-  color:#4a148c;
+  color:#444;
   font-size: 30px; /* Размер иконки */
 }
 .header {
@@ -196,4 +199,84 @@ body {
   left: 43%;
   font-size: 18px;
   color: #d1d1d1;
+}
+.theme-toggle-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background: #181818;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.theme-toggle-button:hover {
+  background: #252525;
+}
+
+.theme-toggle-button.light-theme {
+  background-image: linear-gradient(to bottom right, #ffffff, #ffffff);
+}
+.theme-toggle-button.light-theme {
+  color: black;
+}
+body.light-theme {
+  background: #e0e0e0; /* Задаем светлый фон */
+}
+
+.light-theme .chat-container {
+  background-image: linear-gradient(to bottom right, #ffffff, #ffffff);
+}
+
+.light-theme .chat-message.from-user {
+  background-image: linear-gradient(to bottom right, #9e9e9e, #9e9e9e);
+  color: #000;
+}
+.light-theme .chat-message.from-assistant {
+  background-image: linear-gradient(to bottom right, #e0e0e0, #e0e0e0);
+  color: #000;
+}
+
+.light-theme .user-input {
+  background-color: #e0e0e0;
+}
+
+.light-theme .user-input input[type="text"] {
+  background-image: linear-gradient(to bottom right, #ffffff, #ffffff);
+  color: #000;
+}
+
+.light-theme .user-input button {
+  background-image: linear-gradient(to bottom right, #ffffff, #ffffff);
+  color: #000;
+}
+
+.light-theme .code-box {
+  background-color: #e2e2e2;
+  color: #000;
+}
+.light-theme .sidebar {
+  background-image: linear-gradient(to bottom right, #ffffff, #ffffff);
+  color: #000;
+  border: 1px solid #999;
+}
+.light-theme .sidebar ul li a:hover {
+  background-color: #d1d1d1;
+}
+.light-theme .sidebar ul li a {
+  color: #000;
+}
+.light-theme .logo-text {
+  color: #000;
+}
+.light-theme .pulse-icon i {
+  color: #d6d6d6;
+}
+.light-theme .pulse-icon {
+  background-color: #9b9b9b;
+}
+.light-theme .theme-toggle-button:hover {
+  background: #c2c2c2;
 }
