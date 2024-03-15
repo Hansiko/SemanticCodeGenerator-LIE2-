@@ -229,11 +229,6 @@ body.light-theme {
 .light-theme .chat-container {
   background-image: linear-gradient(to bottom right, #ffffff, #ffffff);
 }
-
-.light-theme .chat-message.from-user {
-  background-image: linear-gradient(to bottom right, #9e9e9e, #9e9e9e);
-  color: #000;
-}
 .light-theme .chat-message.from-assistant {
   background-image: linear-gradient(to bottom right, #e0e0e0, #e0e0e0);
   color: #000;
