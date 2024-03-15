@@ -103,3 +103,9 @@ function clearChat() {
   var chatBox = document.getElementById("chat-box");
   chatBox.innerHTML = ""; // Удаление всех дочерних элементов
 }
+function toggleTheme() {
+  var body = document.body;
+  body.classList.toggle("light-theme");
+  var themeButton = document.querySelector(".theme-toggle-button");
+  themeButton.classList.toggle("light-theme");
+}
